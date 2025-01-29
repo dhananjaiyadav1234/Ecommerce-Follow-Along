@@ -4,6 +4,7 @@ const ErrorHandler = require("./middleware/error");
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 const cors = require("cors");
+const product = require('./controllers/product');
 
 app.use(express.json());
 app.use(cookieParser());
@@ -17,9 +18,10 @@ if (process.env.NODE_ENV !== "PRODUCTION") {
   });
 };
 //import Routes
-const user = require("./controllers/user.js");
+const user = require("./controllers/user");
 
 app.use("/api/v2/user", user);
+app.use("/api/v2/product", product);
 
 // it's for ErrorHandling
 app.use(ErrorHandler);
