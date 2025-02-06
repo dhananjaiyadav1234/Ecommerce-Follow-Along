@@ -5,6 +5,7 @@ import CreatePage from './pages/createPage'
 import {Route,Routes,BrowserRouter} from 'react-router-dom'
 import './App.css'
 import Home from './pages/home'
+import MyProducts from './pages/myProducts'
 
 function App() {
   
@@ -16,6 +17,8 @@ function App() {
        <Route path='/login' element={<Loginpage/>}/>
        <Route path='/signup' element ={<Signup_page/>}/>
        <Route path ='/create-product' element ={<CreatePage/>}></Route>
+       <Route path ='/myProducts' element ={<MyProducts/>}></Route>
+
      </Routes>
      
      </BrowserRouter>
