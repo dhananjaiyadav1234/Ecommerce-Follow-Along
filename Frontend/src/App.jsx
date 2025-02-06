@@ -1,28 +1,21 @@
-import { useState } from 'react'
-import Loginpage from './pages/loginpage'
-import Signup_page from './pages/signup_page'
-import CreatePage from './pages/createPage'
-import {Route,Routes,BrowserRouter} from 'react-router-dom'
-import './App.css'
-import Home from './pages/home'
-import MyProducts from './pages/myProducts'
+import React from 'react'
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import {LoginPage,SignupPage,Home,CreateProduct,MyProducts} from "./Routes";
+import "./App.css";
 
-function App() {
-  
+const App = () => {
   return (
-    <>
-     <BrowserRouter>
-     <Routes>
-       <Route path="/" element={<Home/>}/>
-       <Route path='/login' element={<Loginpage/>}/>
-       <Route path='/signup' element ={<Signup_page/>}/>
-       <Route path ='/create-product' element ={<CreatePage/>}></Route>
-       <Route path ='/myProducts' element ={<MyProducts/>}></Route>
-
-     </Routes>
-     
-     </BrowserRouter>
-    </>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/login' element={<LoginPage/>}/>
+      <Route path="/signup" element={<SignupPage />} />
+      <Route path="/create-product" element={<CreateProduct />} />
+      <Route path="/my-products" element={<MyProducts/>} />
+      <Route path="/create-product/:id" element={<CreateProduct />} />
+    </Routes>
+    </BrowserRouter>
+    
   )
 }
 

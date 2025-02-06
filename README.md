@@ -74,3 +74,70 @@ In this Milestone,
 - Reusable card component with props for product details (e.g., name, image, price).
 - A grid layout or flexbox for displaying multiple cards neatly.
 - A home page with a route connecting to app.jsx.
+
+## Milestone 9: Product Creation Page
+
+In this Milestone,
+
+Learned how to create a form that will take all the details of product
+Learned how to take multiple images as input.
+Creating the page using Tailwind CSS and React JS.
+Form creation using useState.
+And styling it accordingly using Tailwind CSS
+
+
+## Milestone 10: Connecting to Mongo DB
+
+In this Milestone,
+
+Learned how to write product schema using mongoose
+Learned how to create an end point to validate and store product details in mongodb.
+Get about 10 images from the user and post it to backend.
+Use Multer to store the images in the Product folder.
+Build a POST endpoint to receive product data.
+Validate and save the product details to MongoDB.
+
+
+## Milestone 11: Dynamic Product Card
+
+In this Milestone,
+
+To write an endpoint that will send data from extract and send data from mongodb.
+To receive data at frontend -How to display that data dynamically using product card created earlier.
+Change a bit of data in Multer.js
+Dynamically add the created products to the home page.
+View the data from the main page.
+
+
+## Milestone 12: Dynamic Filtering
+
+In this Milestone,
+
+To write an endpoint that will send data by filtering with my mail and send data from mongodb.
+To receive data at frontend -How to display that data dynamically using product card created earlier.
+The user can give their email, and the products from that email can be seen.
+We create a new page myProducts to show the products of the user.
+We update product.js in the backend to create,save and show the product.
+
+
+## Milestone 13:
+
+In this Milestone,
+
+Write an endpoint that will update the existing data in MongoDB.
+Auto fill the form with previous data and give option to edit.
+We use router and post method.
+The entire data and also part of data can be changed.
+frontend we will add an edit button to the product card. When click on edit we will send the data to form and make it auto fill and have option to edit those data and save.
+
+
+## Milestone 14:
+
+In this Milestone,
+
+Write an endpoint that delete the product with specific ID from MongoDB.
+We use routers to delete the product
+In frontend we will add an delete button to the product card.
+When click on delete button we will send the product id to server endpoint.
+After deleting the product will be removed from user's page.
+
