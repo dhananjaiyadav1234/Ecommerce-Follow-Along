@@ -203,7 +203,7 @@ Using PUT method to update the data.
 
 
 
-##Milestone 20: Profile Page
+## Milestone 20: Profile Page
 
 In this Milestone,
 
